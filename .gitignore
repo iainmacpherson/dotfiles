@@ -1,0 +1,11 @@
+# Whitelist gitignore pattern
+# Ignore everything
+*
+# Alow descent into directories
+!*/
+
+# Whitelist files and directories of things we want to include
+!.gitignore
+!README.md
+!tmux.conf
+!starship.toml
