@@ -5,7 +5,6 @@ $username\
 $directory\
 [](fg:#81A1C1 bg:#88C0D0)\
 $git_branch\
-$git_status\
 [](fg:#88C0D0 bg:#8FBCBB)\
 $time\
 [ ](fg:#8FBCBB)\
@@ -24,12 +23,12 @@ vicmd_symbol = "[❮](#B48EAD)"
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
-style_user = "bg:#5E81AC fg:#2E3440"
-style_root = "bg:#5E81AC fg:#2E3440"
+style_user = "bg:#5E81AC fg:#000000"
+style_root = "bg:#5E81AC fg:#000000"
 format = '[$user ]($style)'
 
 [directory]
-style = "bg:#81A1C1 fg:#2E3440"
+style = "bg:#81A1C1 fg:#000000"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -69,11 +68,11 @@ format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
 symbol = ""
-style = "bg:#88C0D0 fg:#2E3440"
+style = "bg:#88C0D0 fg:#000000"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#88C0D0 fg:#2E3440"
+style = "bg:#88C0D0 fg:#000000"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
@@ -114,5 +113,5 @@ format = '[ $symbol ($version) ]($style)'
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#8FBCBB fg:#2E3440"
+style = "bg:#8FBCBB fg:#000000"
 format = '[  $time ]($style)'
