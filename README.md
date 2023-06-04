@@ -2,7 +2,7 @@
 Repository of custom configs for various tools.
 
 ## Things required
-* Neovim > 0.5
+* Neovim > 0.7
 * pynvim (through pip3)
 * zsh & oh-my-zsh
 * Starship
