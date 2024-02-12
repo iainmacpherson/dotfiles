@@ -5,6 +5,8 @@ $username\
 $directory\
 [](fg:#81A1C1 bg:#88C0D0)\
 $git_branch\
+[](fg:#88C0D0 bg:#88C0D0)\
+$python\
 [](fg:#88C0D0 bg:#8FBCBB)\
 $time\
 [ ](fg:#8FBCBB)\
@@ -115,3 +117,9 @@ disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#8FBCBB fg:#000000"
 format = '[  $time ]($style)'
+
+[python]
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+symbol = '👾 '
+pyenv_version_name = true
+style = "bg:#88C0D0 fg:#2E3440"
