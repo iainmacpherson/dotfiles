@@ -9,3 +9,7 @@ Repository of custom configs for various tools.
 * Tmux
 * Nodejs >= 14.14.0
 
+### Neovim plugin dependencies
+* make
+* gcc
+* npm
