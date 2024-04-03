@@ -13,3 +13,4 @@ Repository of custom configs for various tools.
 * make
 * gcc
 * npm
+* A nerd font
