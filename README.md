@@ -14,3 +14,6 @@ Repository of custom configs for various tools.
 * gcc
 * npm
 * A nerd font
+
+### TODO/Wishlist
+* Fix string search in workspace
