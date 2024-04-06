@@ -10,10 +10,11 @@ Repository of custom configs for various tools.
 * Nodejs >= 14.14.0
 
 ### Neovim plugin dependencies
-* make
-* gcc
-* npm
+* Telescope Fuzzy Finder
+    * make
+    * gcc
+    * ripgrep (for string search in workspace)
+* Mason    
+    * npm
 * A nerd font
 
-### TODO/Wishlist
-* Fix string search in workspace
