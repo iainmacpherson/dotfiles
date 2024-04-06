@@ -9,14 +9,19 @@ return {
             keymaps = {},
             commands = {
                 {
-                    ':EditConfig',
-                    ':e $MYVIMRC | cd %:h',
-                    description = 'Move the current working directory to the root of the nvim config.'
+                    'MarkdownPreview',
+                    ':MarkdownPreview',
+                    description = 'Render and display a preview of a markdown file in the system browser.',
                 },
                 {
                     itemgroup = 'Editor Commands',
-                    description = 'Commands that edit editor settings or modify the current buffer',
+                    description = 'Commands that edit editor settings or modify the current buffer.',
                     commands = {
+                        {
+                            ':EditConfig',
+                            ':e $MYVIMRC | cd %:h',
+                            description = 'Move the current working directory to the root of the nvim config.'
+                        },
                         {
                             ':StripTrailingWhitespace',
                             ':%s/\\s\\+$//e',
@@ -47,13 +52,14 @@ return {
             },
             autocmds = {},
             funcs = {
-                {
-                    utils.sayHello,
-                    description = 'Say Hello',
-                },
+            --    {
+            --        utils.sayHello,
+            --        description = 'Say Hello',
+            --    },
             },
         })
 
+        vim.keymap.set("n", "<Leader>/", "<cmd>ClearSearchTerm<CR>", { desc = "Clear the current search term"})
         vim.keymap.set("n", "<C-p>", "<cmd>Legendary<CR>", { desc = "Open Legendary command search"})
     end,
 }
