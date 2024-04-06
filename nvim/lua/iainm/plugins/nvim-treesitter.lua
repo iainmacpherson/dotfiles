@@ -22,6 +22,7 @@ return {
                 "json",
                 "xml",
                 "csv",
+                "groovy",
             },
             sync_install = false,
             highlight = { enable = true },
