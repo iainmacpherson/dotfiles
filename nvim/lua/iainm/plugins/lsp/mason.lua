@@ -26,7 +26,7 @@ return {
       ensure_installed = {
         "lua_ls",
         "pyright",
-        "tsserver",
+        "ts_ls",
         "matlab_ls",
       },
       -- auto-install configured servers (with lspconfig)

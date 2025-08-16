@@ -19,20 +19,17 @@ return {
                 z = true, -- bindings for folds, spelling and others prefixed with z
                 g = true, -- bindings for prefixed with g
             },
-            key_labels = { ["<leader>"] = "SPC" },
         })
         -- Leader based groups
-        wk.register({
-            mode = { "n", "v" },
-            l = {
-                name = "lsp",
-                g = { name = "goto", },
-                s = { name = "show", },
-            },
-            ["s"]       = { name = "+split" },
-            ["<tab>"]   = { name = "+tabs" },
-            ["e"]       = { name = "+exporer" },
-            ["f"]       = { name = "+find" },
-        }, {prefix = "<leader>"})
+        wk.add({
+            { "<leader>l", group = "lsp", mode = { "n", "v" } },
+            { "<leader>lg", group = "goto" },
+            { "<leader>ls", group = "show" },
+            { "<leader>s", group = "split" },
+            { "<leader><tab>", group = "tabs" },
+            { "<leader>e", group = "explorer" },
+            { "<leader>f", group = "find" },
+        })
     end
 }
+

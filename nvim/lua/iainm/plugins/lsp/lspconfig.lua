@@ -90,13 +90,13 @@ return {
                 },
             },
         })
-        -- pyright. TODO(iain): set up a suitable configuration
+        -- pyright
         lspconfig.pyright.setup({
             capabilities = capabilities,
             on_attach = on_attach,
         })
-        -- tsserver
-        lspconfig.tsserver.setup({
+        -- ts_ls
+        lspconfig.ts_ls.setup({
             capabilities = capabilities,
             on_attach = on_attach,
             completions = {
