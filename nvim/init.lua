@@ -8,4 +8,5 @@ vim.g.mapleader = ';'
 
 require("iainm.core")
 require("iainm.lazy")
+require("iainm.lsp")
 
